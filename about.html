@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #141E30, #243B55);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #ff800;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #ddd;
+    }
+    .about-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      line-height: 1.8;
+    }
+    .about-container h2 {
+      color: #ff9800;
+      margin-bottom: 15px;
+    }
+    .about-container p {
+      margin-bottom: 20px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .skill-card {
+     background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    }
+    .skill-card h3 {
+      margin: 10px 0;
+      color: #ff9800;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <p>Get to know more about my journey, style, and passion</p>
+  </header>
+
+  <section class="about-container">
+    <h2>Who I Am</h2>
+    <p>Hello! I'm Fahad Akhter, a passionate creator who loves speed, style, and storytelling. This platform is my way to share amazing experiences, exciting videos, and inspiring content with you all.</p>
+
+    <h2>My Skills & Interests</h2>
+    <div class="skills">
+      <div class="skill-card">
+        <h3>🏎 Speed & Cars</h3>
+        <p>Exploring the world of motorsport and unique cars.</p>
+      </div>
+      <div class="skill-card">
+        <h3>🎬 Video Editing</h3>
+        <p>Creating professional edits with cinematic effects.</p>
+      </div>
+      <div class="skill-card>
+        <h3>📸 Photography</h3>
+        <p>Capturing stories through lenses.</p>
+      </div>
+      <div class="skill-card">
+        <h3>🌍 Lifestyle</h3>
+        <p>Sharing unique stories and travel adventures.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+<!-- Navigation (3 Dots Menu) -->
+<style>
+  .menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  .menu button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .menu-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+  }
+  .menu-content a {
+    display: block;    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  .menu-content a:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  .show {
+    display: block;
+  }
+</style>
+
+<div class="menu">
+  <button onclick="toggleMenu()">⋮</button> <!-- three vertical dots -->
+  <div id="menuDropdown" class="menu-content">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="videos.html">🎬 Videos</a>
+    <a href="contact.html">📩 Contact</a>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuDropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.menu button')) {
+      let dropdown = document.getElementById("menuDropdown");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  }
+</script>

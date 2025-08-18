@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMEN F1 | Speed, Style & Stories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>OMEN F1</h1>
+  <h2>Speed, Style & Stories</h2>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://www.instagram.com/akhteraura" target="_blank">Instagram</a></li>
+      <li><a href="https://tiktok.com/@akhteraura" target="_blank">TikTok</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<script>
+function toggleMenu( {
+  document.getElementById("menu").classList.toggle("show");
+}
+
+</script>
+
+<div class="container">
+  <section>
+    <h3>Connect with me</h3>
+    <p>Follow me on Instagram and TikTok for more content!</p>
+  </div>
+</div>
+<section class="movies">
+  <h2>Latest Movies</h2>
+  <div class="movie-grid">
+
+    <!-- Alien Earth Movie Card -->
+    <div class="movie-card">
+      <img src="Images/Alien Earth - Copy.jpeg" alt="Alien Earth (2025)">
+      <div class="movie-info">
+        <h3>
+          <a href="https://vegamovies.gmbh/download-alien-earth-2025-season-1-hindi-dubbed-org-series-480p-720p-1080p/" target="_blank">
+            Alien: Earth (2025) Season 1
+          </a>
+        </h3>
+        <p>
+          <a href="https://vegamoviesgmbh/download-alien-earth-2025-season-1-hindi-dubbed-org-series-480p-720p-1080p/" target="_blank">
+            Download Alien: Earth (2025) – Dual Audio (Hindi-English)<br>
+            480p | 720p | 1080p
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Tenet Movie Card (beside Alien Earth) -->
+    <div class="movie-card">
+      <img src="Images/tenet.jpeg" alt="Tenet (2020)">
+      <div class="movie-info">
+        <h3>
+          <a href="https://vegamovies.gmbh/download-tenet-2020-hindi-engish-480p-720p-1080p/" target="_blank">
+            Tenet (2020)
+          </a>
+        </h3>
+        <p>
+          <a href="https://vegamovies.gmbh/download-tenet-2020-hindi-english-480p-720p-1080p/" target="_blank">
+            Download Tenet (2020) – Dual Audio (Hindi-English)<br>
+            480p | 720p | 1080p
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* Movies Section */
+.movies {
+  margin: 40px 0;
+  text-align: center;
+}
+.movies h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff;
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.movie-card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+.movie-card:hover {
+  transform: scale(1.05);
+}
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.movie-info {
+  padding: 15px;
+  text-align: left;
+}
+.movie-info .date {
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+.movie-info h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.movie-info h3 a {
+  color: #1db954;
+  text-decoration: none;
+}
+.movie-info h3 a:hover {
+  text-decoration: underline;
+}
+.movie-info p {
+  font-size: 14px;
+  color: #ddd;
+}
+</style>
+  </section>
+
+  <section>
+    <h3>Featured Video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jmLczGpFB7s" 
+            title="YouTube vido player" frameborder="0" allowfullscreen></iframe>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 OMEN F1. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+<!-- Navigation (3 Dots Menu) -->
+<style>
+  .menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  .menu button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .menu-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+  }
+  .menu-content a {
+    display: block;    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  .menu-content a:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  .show {
+    display: block;
+  }
+</style>
+
+<div class="menu">
+  <button onclick="toggleMenu()">⋮</button> <!-- three vertical dots -->
+  <div id="menuDropdown" class="menu-content">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="video.html">🎬 Videos</a>
+    <a href="contact.html">📩 Contact</a>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuDropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.menu button')) {
+      let dropdown = document.getElementById("menuDropdown");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  }
+</script>
+
+
+
